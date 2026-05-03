@@ -15,6 +15,16 @@ return {
     },
   },
   {
+    "ibhagwan/fzf-lua",
+    cmd = "FzfLua",
+    opts = {
+      files = {
+        hidden = true,
+        no_ignore = true,
+      },
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = {
