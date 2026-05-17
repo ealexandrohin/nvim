@@ -30,6 +30,26 @@ return {
       inlay_hints = {
         enabled = false,
       },
+      servers = {
+        yamlls = {
+          settings = {
+            yaml = {
+              format = {
+                printWidth = 120,
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "caddy",
+      },
+      auto_install = true,
     },
   },
   {
