@@ -53,6 +53,29 @@ return {
     },
   },
   {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters = {
+        caddy = {
+          command = "caddy",
+          args = { "fmt", "-" },
+          stdin = true,
+        },
+      },
+      formatters_by_ft = {
+        caddy = { "caddy" },
+      },
+    },
+  },
+  {
+    "folke/ts-comments.nvim",
+    opts = {
+      lang = {
+        caddy = "# %s",
+      },
+    },
+  },
+  {
     "iamcco/markdown-preview.nvim",
     init = function()
       vim.g.mkdp_page_title = "${name}"
