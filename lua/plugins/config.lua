@@ -37,6 +37,9 @@ return {
               format = {
                 printWidth = 120,
               },
+              customTags = {
+                "!reference sequence",
+              },
             },
           },
         },
