@@ -5,9 +5,12 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
+vim.opt.spelllang = { "en", "ru" }
 vim.filetype.add({
   extension = {
     caddy = "caddy",
+    tf = "terraform",
+    tfvars = "terraform-vars",
   },
   filename = {
     Caddyfile = "caddy",
